@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La cereza artesanal</title>
+<link rel="icon" href="/img/LA ruta de la cerveza.png">
+<link rel="stylesheet" href="/css/style.css">
+
+<!--bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!--FONT-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">  
+</head>
+<body>
+<!-- NAVBAR -->
+<nav id="navbar-menu" class="navbar sticky-top p-4 style-nav navbar-expand-lg">
+<div class="container">
+  <a class="text-light title-logo ms-2" href="index.html">La ruta de la Cerveza</a>
+  <button class="navbar-toggler bg-azul-oscuro menu-button me-0" type="button" data-bs-toggle="collapse" data-bs-target="#options-menu" aria-controls="options-menu" aria-expanded="false" aria-label="Toggle navigation">
+    MENU<i class="fa-solid fa-bars"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="options-menu">
+      <ul class="nav nav-pills ms-lg-auto navbar-nav me-auto me-lg-0 mb-2 mb-lg-0">
+          <li class="nav-item">
+          <a class="nav-link text-light link-menu " href="/contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light link-menu " href="/Acerca de nosotros.html">Sobre nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light link-menu  " href="#" data-bs-toggle="modal" data-bs-target="#exampleModal-1">Ingresar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light link-menu " href="#" data-bs-toggle="modal" data-bs-target="#exampleModal-2">Suscribirse</a>
+          </li>
+      </ul>
+  </div>
+</div>
+</nav>
+  <!-- Ventana modal - Ingresar -->
+  <div class="modal fade " id="exampleModal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content overflow-hidden  bg-black">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Accede a tu cuenta</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+  
+      <div class="row row-cols-lg-2 row-cols-1 ms-0 modal-body">
+        <div class="col col-sm-12">
+        <form action="/error.html">
+          <div class="mb-3">
+            <label for="e-mail" class="col-form-label fw-bold">E-mail:</label>
+            <input type="email" class="form-control" id="e-mail" required name="user-email"></input>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="col-form-label fw-bold">Contraseña:</label>
+            <input type="password" class="form-control" id="password" minlength="4" maxlength="12" required name="user-password"></input>
+          </div>
+          <div class="mb-3 text-center">
+    <button class="btn-modal" type="submit">Acceder</button>
+    <br><br><a class="fw-bold" href="/error.html" data-bs-toggle="modal" data-bs-target="#forget-password">Olvidé mi contraseña</a>
+  </div>
+    </form>
+    <div class="container-button mb-3">
+    <button class="acount-button"><img class="image-icons" src="/img/google.png" alt="google"><a class="nav-link text-black" href="/error.html"> Acceder con cuenta de Google</a></button>
+    <button class="acount-button"><img class="image-icons" src="/img/facebook.png" alt="facebook"><a class="nav-link text-black" href="/error.html">Acceder con cuenta de Facebook</a></button>
+      </div>
+      </div><!--col1-->
+      <div class=" col  modal-body text-center">
+      <img class="img-fluid" src="/img/LA ruta de la cerveza.png" alt="logo" width="300" height="350">
+        </div>
+    </div> <!--row-->
+    </div>
+    </div>
+    </div>
+<!--Modal olvide contraseña-->
+<div class="modal" id="forget-password" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content overflow-hidden bg-black">
+      <div class="modal-header">
+        <h5 class="modal-title">Recuperar Contraseña</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="/error.html">
+          <div class="mb-3">
+            <label for="e-mail" class="col-form-label fw-bold">E-mail:</label>
+            <input type="email" class="form-control" id="e-mail" required name="user-email"></input>
+          </div>
+          <div class="d-flex justify-content-end">
+            <button type="reset" class="btn-modal me-2" data-bs-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn-modal">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Ventana modal - Suscripcion -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content overflow-hidden bg-black">
+  <div class="modal-header">
+    <h5 class="modal-title fw-bold" id="exampleModalLabel">Ingresa tus Datos</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+    <form action="/error.html">
+      <div class="mb-3">
+        <label for="fullname" class="col-form-label fw-bold">Nombre y Apellido:</label>
+        <input type="text" class="form-control" id="fullname" required name="user-fullname">
+      </div>
+      <div class="mb-3">
+        <label for="e-mail" class="col-form-label fw-bold">E-mail:</label>
+        <input type="email" class="form-control" id="e-mail"  placeholder="ejemplo@gmail.com" required name="user-email"></input>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="col-form-label fw-bold">Contraseña:</label>
+        <input type="password" class="form-control" id="password" minlength="4" maxlength="12" placeholder="De 4 a 12 caracteres"required name="user-password"></input>
+      </div>
+      <div class="mb-3">
+        <label for="password-confirm" class="col-form-label fw-bold">Confirmar contraseña:</label>
+        <input type="password" class="form-control" id="password-confirm" required name="user-confirm-password"></input>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+        <label class="form-check-label fw-bold" for="invalidCheck">
+          Enviar notificaciones por E-mail
+        </label>
+        <div class="invalid-feedback">
+          You must agree before submitting.
+        </div>
+      </div><br>
+      <div class="d-flex justify-content-end">
+        <button type="reset" class="btn-modal me-2" data-bs-dismiss="modal">Cerrar</button>
+        <button type="submit" class="btn-modal">Enviar</button>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+</div>  
+
+<main class="container-article">
+<article class="">
+<h1>La cerveza artesanal como producto evolutivo</h1>
+<p> <em> Publicado el 20 de marzo del 2022 por Patricia Diaz</em></p>
+<img src="/img/para articulos/beer.jpg" alt="beer" class="mb-2">
+<p class="text-article" >Las cervezas artesanales son cervezas sin aditivos ni conservantes y sin pasteurizar. Están vivas y son un producto evolutivo, que cambia cada día un poco, con presencia de levadura viva (visible o no). Se producen mediante un proceso natural a partir del grano, malta, sin utilizar extractos ni productos diferentes del agua, levadura, lúpulo y el cereal para hacer la malta. </p>
+<p class="text-article" >El sistema de elaboración consta de cinco etapas básicas: maceración, cocción, enfriamiento, fermentación (la primera en un fermentador y la segunda en la misma botella) y envasado. Para garantizar la calidad del producto los lotes de producción de cerveza artesana tienen un máximo de 7500 litros por caldera de cocción. No se admite el uso de calderas de gelatinización, con el objetivo de obtener fuentes extras de azúcares a partir de ingredientes como el maíz o el arroz. La gasificación de la cerveza se hace de forma natural durante la segunda fermentación. </p>
+<p class="text-article" > El proceso artesano tiene que ser un proceso "todo grano" que parte del grano (malteado o no). No se permiten ningún tipo de extracto (ni de maltas ni de lúpulos) para la obtención del mosto de la cerveza. Tampoco se permite el uso de aditivos ni coadyuvantes tecnológicos sintéticos (antioxidantes, conservantes, colorantes, estabilizantes, etc.). En algunas variedades la composición puede incluir también otras materias primeras naturales por aromatizarlas (azúcares, especias, frutas, etc.).</p>
+<h2>Tipos de cervezas</h2>
+<p class="text-article"
+class="text-article"
+class="text-article">Pues bien, en cuanto a variedades, la gran mayoría de mortales, cuando pensamos en una cerveza, nos imaginamos una bebida de color amarillo tirando a dorado. Eso es porque, aunque existan birras de todos los colores, la rubia es el prototipo de cerveza por excelencia. Pero dentro de esas cervezas rubias, existen muchos tipos muy diferentes, cada uno de ellos elaborados de una manera distinta o con una historia diferente detrás. Siendo estrictos, el término cerveza rubia no se refiere a ningún estilo o variedad específica, sino que hace referencia a un amplio abanico de cervezas que tienen un elemento en común: el uso de maltas claras o pálidas.</p>
+<p class="text-article"
+class="text-article"
+class="text-article">La malta, junto al lúpulo, el agua y la levadura, es uno de los cuatro componentes básicos de cualquier cerveza, siguiendo las directrices de la Ley de Pureza Alemana de 1516. Cuando hablamos de malta, si no especificamos lo contrario, nos estamos refiriendo a malta de cebada, el cereal más usado en la elaboración de cerveza. Pues bien, esa cebada contiene los azúcares necesarios para el proceso de fermentación del mosto, pero para hacer que esos azúcares sean fermentables debemos liberarlos mediante el malteado que básicamente consiste en cocer u hornear el cereal. Si ese horneado se hace a bajas temperaturas y durante poco tiempo, obtendremos maltas muy claras y poco tostadas que posteriormente darán lugar a una cerveza de aspecto más pálido como Pale Large, Pilsner y Helles por mencionar sólo algunas de las más conocidas.</p>
+<p class="text-article"
+class="text-article"
+class="text-article">Por otro lado, las cervezas rojas se destacan por estar elaboradas en su mayoría con maltas caramelo lo que le aportan un dulzor particular y una complejidad distinta que a la de las cervezas rubias, que llevan malta base o pilsen.</p>
+<p class="text-article"
+class="text-article"
+class="text-article">Este tipo de cervezas se distinguen por sus aromas y sabores frutales, aunque también pueden sentirse algunas notas a grano tostado. Suelen ser bajas en alcohol- oscilan entre el 3.8% y el 5% y se destacan por su tomabilidad. Entre esta variedad, sólo por mencionar algunas opciones encontramos cervezas Red Lager, Amber Lager y Ale entre las más populares. Cabe mencionar que entre el segmento más tradicional podemos mencionar algunas como Irish Red Ale, Scottisch, American Amber Ale -también tiene una variante con levaduras lager-, Oktoberfest y hay una variante más extrema nacida en Escocia que se llama Wee Heavy y que se destaca por tener un mayor cuerpo y porcentaje alcohólico que la Scottisch.</p>
+<p class="text-article"
+class="text-article"
+class="text-article">Finalmente, en cuanto a la cerveza negra, se trata de una bebida que se caracteriza por llevarse a cabo en un proceso de fermentación baja. Llama la atención por su sabor algo más fuerte y consistente, y por tener un color oscuro que la diferencia de la tradicional rubia. Si bien su origen se localiza en las zonas de Sajonia y Turinga en Alemania, actualmente compite codo a codo con la formula irlandesa gracias a una popular marca de referencia mundial.  </p>
+<p class="text-article"
+class="text-article"
+class="text-article">Cabe mencionar que la cerveza en general tiene propiedades saludables, la negra aporta mayores cantidades de hierro. Entre sus principales variantes encontramos la Porter (originaria de Londres en 1722, siendo muy popular entre la clase trabajadora- de ahí su nombre), Imperial Stout (de características similares a la porter, pero con mayor graduación alcohólica pudiendo llegar a un 15%), Cream Stout (en la cual es frecuente el uso de lactosa para su elaboración, llegando a adquirir una consistencia ligeramente cremosa y de sabor acaramelado), Bock y Schwarzbier.</p>
+<br><br>
+
+</article>
+
+<!--COMENTARIOS-->
+<section class="">
+
+  <form role="form">
+  <div class=""> 
+  <label for="comentario"><b>Deje aquí sus comentarios</b> </label>
+  <textarea class="form-control mt-2 " rows="4" id="comentarios"></textarea>
+  </div> 
+  
+  <button type="submit" class="btn-modal ms-2 my-2 fw-bold">Enviar</button>      
+  </form>
+
+</main>
+
+<!--FOOTER-->
+<footer class="desingfooter text-center d-flex row row-cols-md-3 row-cols-lg-3 row-cols-1 py-4 mt-4 mb-0 mx-0 border-top">
+<div class="col">
+<a href="/index.html">
+<img src="/img/LA ruta de la cerveza.png" class="bi me-2" width="200" height="200"> 
+</a>
+<p class="text-light">© Todos los derechos reservados</p>
+</div>
+    
+<div class="col text-center">
+<h5>Nuestras redes sociales</h5>
+<ul class="nav flex-column mt-3" >
+<li class="nav-item mb-3">
+<img  src="/img/facebook.png" alt="Facebook-icon" width="30px" height="30px">
+<a href="#" class="nav-link p-0 text-white d-inline " > Facebook
+</a>
+</li>
+<li class="nav-item mb-3">
+  <img  src="/img/instagram.png" alt="Instagram-icon" width="30px" height="30px">
+  <a href="#" class="nav-link p-0 text-white d-inline "> Instagram
+  </a>
+</li>
+<li class="nav-item mb-3">
+  <img src="/img/gorjeo.png" alt="Twitter-icon" width="30px" height="30px">
+  <a href="#" class="nav-link p-0 text-white d-inline"> Twitter
+  </a>
+</li>
+</ul>
+</div>  
+    <div class="col text-center">
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"> <img src="/img/prohibido.png" alt="" width="150px" height="225px"></li>
+      </ul>
+    </div>
+  </footer>  
+      <!-- JavaScript Bundle with Popper -->   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

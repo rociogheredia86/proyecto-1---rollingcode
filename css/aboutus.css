@@ -1,0 +1,57 @@
+*{
+box-sizing: border-box;
+max-width: 100%;
+}
+
+body{
+display: block;
+background-image: linear-gradient(to top right, #EFAB6B 40%,#BA8163 60%,#D28C60 );
+}
+.title-logo{
+font-family: 'Ultra', serif;
+text-decoration: none;
+}
+.title-logo:hover{
+color: rgb(253, 188, 104)!important;
+}
+
+.link-menu{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.link-menu:hover{
+color: rgb(253, 188, 104)!important;
+}
+.styletext{
+font-family: 'Merienda', cursive;
+}
+p{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 25px;
+}
+.presentacion{
+text-align: center;
+margin: 8%;
+display: block;
+align-items: center;
+justify-content: center;
+}
+.nombres{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+.fotos{
+width: 100%;
+padding: 5%;
+display: inline;
+}
+.integrantes{
+text-align: center;
+margin: 10px;
+}
+
+.team{
+width: 300px;
+display: inline-block;
+margin-left: 10px;
+}

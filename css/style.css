@@ -1,0 +1,247 @@
+/*Estilos Rocio*/
+*{
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body{
+display: block;
+background-image: linear-gradient(to top right, #EFAB6B 40%,#BA8163 60%,#D28C60 );
+}
+.style-nav{
+    background-color: #231004;
+}
+.title-logo{
+    font-family: 'Ultra', serif;
+    text-decoration: none;
+    font-size: 25px;
+}
+.title-logo:hover{
+    color: rgb(253, 188, 104)!important;
+}
+
+.link-menu{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.link-menu:hover{
+    color: rgb(253, 188, 104)!important;
+}
+
+.slider-text{
+display: block;
+margin-top: 30px;
+font-family: 'Acme', sans-serif;
+text-shadow: 5px 5px 5px #1a1304;
+}
+
+.style-button{
+font-size: 15px;
+font-weight: bold;
+border: 2px solid #521e02;
+color: whitesmoke;
+border-radius: 3em;  
+padding: 10px;
+background-color: #fc925a;
+text-decoration: none;
+}
+.style-button:hover{
+    color: whitesmoke;
+    background-color: #a75b32;
+}
+.box-card{
+    border: 2px solid #461b04 ;
+    background-color: #e0c0ae;
+}
+.link{
+border: 2px solid rgb(104, 68, 44);
+padding: 10px 25px 10px 25px;
+margin: 2px;
+text-decoration: none;
+color: black;
+background-color: bisque;
+}
+.link:hover{
+color: black;
+background-color: #D28C60;
+}
+.styletext{
+font-family: 'Merienda', cursive;
+}
+
+.imagredes{
+    vertical-align: middle !important;
+}
+.desingfooter{
+background-image: linear-gradient(#5E0C00,#8B2C00);
+color: white;
+}
+
+.text-label{ /*buscar*/
+border: 2px solid #461b04 ;
+background-color: #e0c0ae;
+padding: 2px;
+width: 100%;
+border-radius: 1em;
+font-family: 'Times New Roman', serif;
+}
+.buscar{
+    font-size: 20px;
+    font-weight: bold;
+}
+.inputsearch{/*buscar*/
+width: 50%;
+text-transform: none;
+outline: none;
+}
+.inputsearch:hover{
+border-radius: 3px ;
+border-color: #8B2C00;
+}
+ul{
+    margin-left: 0%;
+}
+.link-category{
+text-decoration: none;
+color: black; 
+}
+.link-category:hover{
+background-color: #9f5026;
+color: black;
+}
+.img-fluid{ /*articulo de pubs*/
+    max-width: 100%;
+} 
+.container-article{
+padding: 2% 10% 2% 10%;
+}
+.text-article{
+font-family:'Segoe UI',  sans-serif;
+font-size: 12pt;
+}
+/*-----estilos para la parte de comentarios---*/
+.text-coment{
+margin-left: 8%;
+text-align: justify;
+}
+.style-coment{
+background-color: bisque;
+}
+    
+/*-----------------------------------------------------*/
+/*estilos de Pablo*/
+.modal-header{
+    background-color: rgb(189, 104, 58);
+}
+.modal-body{
+background-color: #e9ba6a;
+opacity: 1;
+}
+.bg-azul-oscuro{
+    background-color: #2c3e50 !important;
+}
+
+.hover-grey:hover{
+color:grey !important;
+}
+
+.menu-button{
+color: white;
+font-size: 15px !important;
+font-weight: 200;
+padding: 10px 10px !important;
+margin-right: 0%;
+}
+.image-icons{
+    height: 15px;
+    width: 15px;
+}
+
+
+
+.login-image{
+height: 50vh;
+width: 50vw;
+}
+.image-error{
+    border: 4px solid black;
+    border-radius: 3rem;
+}
+/*------ESTILOS PAG DE ERROR------*/
+.style-error{
+    font-family: 'Rubik Glitch', cursive;
+    color: #671000;
+    text-shadow: 5px 5px 5px #fbf8f8;
+    animation: scalar infinite 10s;
+}
+@keyframes scalar{
+    0%{
+        transform: scale(0,5);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(2);
+    }
+}
+/*----------------------MEDIA QUERIES--------------------------------*/
+@media screen and (max-width:400px){
+    .link{
+        padding: 5px 15px 5px 15px;
+    }
+}
+@media screen and (max-width:576px) { /*publicidad*/
+    .advertising{
+    display: none;
+    }
+}
+
+@media  screen and (max-width: 430px) {
+.title-logo {
+    font-size: 14px!important;
+    
+}
+.menu-button{
+    color: white;
+    font-size: 12px !important;
+    font-weight: 150;
+    padding: 10px 10px !important;
+    margin-right: 0%;
+    }
+}
+@media screen and (max-width:800px){
+.container-button{
+    display: grid;
+    justify-content: space-evenly ; 
+}
+}
+
+/*-*/
+/*------ESTILOS PARA BOTONES VENTANAS MODAL DEL NAV-------*/
+.btn-modal{
+    text-decoration: none;
+    color: #1a1304;
+    background-color: antiquewhite;
+    border: 2px solid rgb(15, 15, 14);
+    padding: 3px;
+}
+.btn-modal:hover{
+    color: black;
+    background-color: #BA8163;
+    border: 3px solid rgb(252, 207, 181) ;
+}
+.acount-button{
+    border:  2px solid #ac3f00;
+    background-color: rgb(234, 226, 216);
+    border-radius: 1em;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+
+
+
+

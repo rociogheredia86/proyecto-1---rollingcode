@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description"
+content="Un blog dedicado a la cerveza artesanal, con informacion referente, lugares donde consumir en Tucumán y mucho más">
+<meta name="author" content="Pablo Brennan, Patricia Diaz, Sergio Paz García, Rocio Heredia">
+<title>La ruta de la cerveza</title>
+<link rel="icon" href="/img/LA ruta de la cerveza.png ruta de la cerveza.png">
+<link rel="stylesheet" href="/css/style.css">
+<!--bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!--FONT-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<nav id="navbar-menu" class="navbar sticky-top p-4 style-nav navbar-expand-lg">
+<div class="container">
+  <a class="text-light title-logo ms-2" href="index.html">La ruta de la Cerveza</a>
+  <button class="navbar-toggler bg-azul-oscuro menu-button me-0" type="button" data-bs-toggle="collapse" data-bs-target="#options-menu" aria-controls="options-menu" aria-expanded="false" aria-label="Toggle navigation">
+    MENU<i class="fa-solid fa-bars"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="options-menu">
+      <ul class="nav nav-pills ms-lg-auto navbar-nav me-auto me-lg-0 mb-2 mb-lg-0">
+          <li class="nav-item">
+          <a class="nav-link text-light link-menu " href="/contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light link-menu " href="/Acerca de nosotros.html">Sobre nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light link-menu  " href="#" data-bs-toggle="modal" data-bs-target="#exampleModal-1">Ingresar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light link-menu " href="#" data-bs-toggle="modal" data-bs-target="#exampleModal-2">Suscribirse</a>
+          </li>
+      </ul>
+  </div>
+</div>
+</nav>
+  <!-- Ventana modal - Ingresar -->
+  <div class="modal fade" id="exampleModal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content overflow-hidden bg-black">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Accede a tu cuenta</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+  
+      <div class="row row-cols-lg-2 row-cols-1 ms-0 modal-body">
+        <div class="col col-sm-12">
+        <form action="/error.html">
+          <div class="mb-3">
+            <label for="e-mail" class="col-form-label fw-bold">E-mail:</label>
+            <input type="email" class="form-control" id="e-mail" required name="user-email"></input>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="col-form-label fw-bold">Contraseña:</label>
+            <input type="password" class="form-control" id="password" minlength="4" maxlength="12" required name="user-password"></input>
+          </div>
+          <div class="mb-3 text-center">
+    <button class="btn-modal" type="submit">Acceder</button>
+    <br><br><a class="fw-bold" href="/error.html" data-bs-toggle="modal" data-bs-target="#forget-password">Olvidé mi contraseña</a>
+  </div>
+    </form>
+    <div class="container-button mb-3">
+    <button class="acount-button"><img class="image-icons" src="/img/google.png" alt="google"><a class="nav-link text-black" href="/error.html"> Acceder con cuenta de Google</a></button>
+    <button class="acount-button"><img class="image-icons" src="/img/facebook.png" alt="facebook"><a class="nav-link text-black" href="/error.html">Acceder con cuenta de Facebook</a></button>
+      </div>
+      </div><!--col1-->
+      <div class=" col  modal-body text-center">
+      <img class="img-fluid" src="/img/LA ruta de la cerveza.png" alt="logo" width="300" height="350">
+        </div>
+    </div> <!--row-->
+    </div>
+    </div>
+    </div>
+<!--Modal olvide contraseña-->
+<div class="modal" id="forget-password" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content overflow-hidden bg-black">
+      <div class="modal-header">
+        <h5 class="modal-title">Recuperar Contraseña</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="/error.html">
+          <div class="mb-3">
+            <label for="e-mail" class="col-form-label fw-bold">E-mail:</label>
+            <input type="email" class="form-control" id="e-mail" required name="user-email"></input>
+          </div>
+          <div class="d-flex justify-content-end">
+            <button type="reset" class="btn-modal me-2" data-bs-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn-modal">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Ventana modal - Suscripcion -->
+      
+<!-- Modal -->
+<div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content overflow-hidden bg-black">
+  <div class="modal-header">
+    <h5 class="modal-title fw-bold" id="exampleModalLabel">Ingresa tus Datos</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+    <form action="/error.html">
+      <div class="mb-3">
+        <label for="fullname" class="col-form-label fw-bold">Nombre y Apellido:</label>
+        <input type="text" class="form-control" id="fullname" required name="user-fullname">
+      </div>
+      <div class="mb-3">
+        <label for="e-mail" class="col-form-label fw-bold">E-mail:</label>
+        <input type="email" class="form-control" id="e-mail"  placeholder="ejemplo@gmail.com" required name="user-email"></input>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="col-form-label fw-bold">Contraseña:</label>
+        <input type="password" class="form-control" id="password" minlength="4" maxlength="12" placeholder="De 4 a 12 caracteres"required name="user-password"></input>
+      </div>
+      <div class="mb-3">
+        <label for="password-confirm" class="col-form-label fw-bold">Confirmar contraseña:</label>
+        <input type="password" class="form-control" id="password-confirm" required name="user-confirm-password"></input>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+        <label class="form-check-label fw-bold" for="invalidCheck">
+          Enviar notificaciones por E-mail
+        </label>
+        <div class="invalid-feedback">
+          You must agree before submitting.
+        </div>
+      </div><br>
+      <div class="d-flex justify-content-end">
+        <button type="reset" class="btn-modal me-2" data-bs-dismiss="modal">Cerrar</button>
+        <button type="submit" class="btn-modal">Enviar</button>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+</div>  
+
+<!--SLIDER-->
+<div id="carouselblog" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselblog" data-bs-slide-to="0" class="active" aria-current="true"
+    aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselblog" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselblog" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/img/slider1.jpg" class="d-block w-100" alt="amigos" height="400px">
+      <div class="carousel-caption d-block d-md-block">
+      <h1 class="slider-text">Aficionados a la cerveza </h1>
+      <p class="fs-4 slider-text"> Es un blog dedicado a la cerveza artesanal.</p>
+      </div>
+    </div>
+  <div class="carousel-item">
+    <img src="/img/slider2.png" class="d-block w-100" alt="cervezas" height="400px">
+    <div class="carousel-caption d-block d-md-block ">
+    <h1 class="slider-text">Contenido cervecero</h1>
+    <p class="fs-4 slider-text">En el blog encontrarán información sobre los distintos aspectos de la cerveza artesanal.</p>
+    </div>
+  </div>
+  <div class=" carousel-item">
+    <img src="/img/slider3.png" class="d-block w-100" alt="lugares" height="400px">
+    <div class="carousel-caption d-block d-md-block">
+    <h1 class="slider-text">Bares y pubs en Tucumán</h1>
+    <p class="fs-4 slider-text">Te recomendamos los mejores lugares donde degustar una buena cerveza.</p>
+    </div>
+  </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselblog" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselblog" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!--Fin Slider-->
+
+<!--PAGINA PRINCIPAL-ARTICULOS-->
+<main class="my-3 mx-3 d-flex justify-content-center">
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="articles box-card my-3">
+      <img src="/img/collage.jpg" class="" alt="collage" width="100%">
+        <div class="card-body">
+          <h5 class="card-title">¡Pubs, Happy hour y algo más!</h5>
+          <p class="card-text">Como se sabe, la creciente apertura de cervecerías en la provincia de Tucumán en los
+            últimos años, ha traído consigo un aumento en la demanda, variedad y calidad (por sobre todo artesanal)
+            de esta bebida alcohólica que, religiosamente, reúne todos los fines de semana a grupos de amigos en los
+            diversos pubs estratégicamente distribuidos, principalmente, en la metrópoli tucumana.</p>
+          <a href="/pubstuc.html" class="style-button">Ver más</a>
+        </div>
+      </div>
+
+
+    <div class="articles box-card my-3">
+      <img src="/img/cervezaartesanal.jpg" class="" alt="cerveza artesanal"width="100%" >
+      <div class="card-body">
+        <h5 class="card-title">La cerveza artesanal</h5>
+        <p class="card-text">La cerveza artesanal es una bebida fermentada de un cereal, elaborada en pequeñas
+          cantidades y, por lo tanto, se le da máxima atención a cada pequeño detalle, asegurando un producto
+          final de la mayor calidad y frescura. Gran parte del proceso se realiza de forma manual.</p>
+        <a href="/La cerveza artesanal.html" class="style-button">Ver más</a>
+      </div>
+    </div>
+
+    <div class="articles box-card my-3 overflow-hidden">
+      <img src="/img/cervezasmundo.jpg" class="" alt="las cervezas del mundo" width="100%">
+      <div class="card-body">
+        <h5 class="card-title">Top de las mejores cervezas artesanales del mundo</h5>
+        <p class="card-text">Las cervezas artesanales ganan terreno cada día dentro de la preferencia de los
+          amantes cerveceros quiénes buscan sabores diferentes y más naturales.
+          Los cuales han ido surgiendo como expresión personal de cada país, y es que muchos son los que prefieren
+          la cerveza sobre otras bebidas alcohólicas.
+        </p>
+        <a href="/error.html" class="style-button">Ver más</a>
+      </div>
+    </div>
+
+<!--PAGINACION-->
+<nav aria-label="Page navigation">
+  <ul class="pagination justify-content-center pagination-lg my-5">
+    <li class="page-item">
+      <a class="link fs-3" href="/error.html" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item" aria-current="page"><a class="link  fs-3" href="/error.html">1</a></li>
+    <li class="page-item"><a class="link fs-3" href="/error.html">2</a></li>
+    <li class="page-item"><a class="link fs-3" href="/error.html">3</a></li>
+    <li class="page-item">
+      <a class="link fs-3" href="/error.html" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+    </div>
+<!--SEGUNDA COLUMNA-Buscador-->
+<div class="col">
+<div class="text-label mt-4 text-center">
+  <form action="">
+    <label for="Search" class=" buscar">Buscar: </label>
+    <input type="text" maxlength="15" id="search" class="inputsearch  mx-1 my-1" placeholder="ej:lugares">
+    <a href="/error.html">
+      <img src="/img/search.png" alt="boton buscar" width="35px" height="35px">
+    </a>
+  </form>
+</div>
+
+  <!--CATEGORÍAS-->
+  <div class="box-card mt-5 py-2 px-1">
+    <h5 class="fs-3 fw-bold ms-4">Categorías</h5>
+      <ul class="list" style="list-style:none;">
+        <li>
+        <a class="link-category fw-bold" href="/imagenes.html">🔶Galería de Imágenes</a>
+        </li>
+        <li><a class="link-category fw-bold" href="/La cerveza artesanal.html">🔶La cerveza artesanal</a> </li>
+        <li><a class="link-category fw-bold" href="/pubstuc.html">🔶¡Pubs, Happy hour y algo más!</a> </li>
+        <li><a class="link-category fw-bold" href="/error.html">🔶Top de las mejores cervezas artesanales del mundo</a>
+        </li>
+      </ul>
+</div>
+<!--Area de publicidad-->
+<aside class=" my-4 advertising p-0">
+  <a class="" href="https://www.dove.com/ar/hair-care/shampoo/shampoo-pelo-largo-fuertes-flexibles.html"
+    target="_blank">
+    <img src="/img/Publicidad.gif" alt="publididad-dove">
+  </a>
+</aside>
+</div>
+</div>
+</main>
+
+<!--FOOTER-->
+<footer>
+  <div class="desingfooter text-center d-flex row row-cols-md-3 row-cols-lg-3 row-cols-1 py-4 mt-4 mb-0 mx-0 border-top">
+  <div class="col">
+    <a href="/index.html">
+      <img src="/img/LA ruta de la cerveza.png" class="bi me-2" width="200" height="200">
+    </a>
+    <p class="text-light">© Todos los derechos reservados</p>
+  </div>
+  
+  <div class="col text-center">
+  <h5>Nuestras redes sociales</h5>
+  <ul class="nav flex-column mt-3">
+    <li class="nav-item mb-3">
+      <img src="/img/facebook.png" alt="Facebook-icon" width="30px" height="30px">
+      <a href="/error.html" class="nav-link p-0 text-white d-inline "> Facebook
+      </a>
+    </li>
+    <li class="nav-item mb-3">
+      <img src="/img/instagram.png" alt="Instagram-icon" width="30px" height="30px">
+      <a href="/error.html" class="nav-link p-0 text-white d-inline "> Instagram
+      </a>
+    </li>
+    <li class="nav-item mb-3">
+      <img src="/img/gorjeo.png" alt="Twitter-icon" width="30px" height="30px">
+      <a href="/error.html" class="nav-link p-0 text-white d-inline"> Twitter
+      </a>
+    </li>
+  </ul>
+  </div>
+  
+  <div class="col text-center">
+  <ul class="nav flex-column">
+  <li class="nav-item mb-2"> <img src="/img/prohibido.png" alt="" width="150px" height="225px"></li>
+  </ul>
+  </div>
+  </footer>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

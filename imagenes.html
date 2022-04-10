@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galeria de imágenes</title>
+<link rel="icon" href="/img/LA ruta de la cerveza.png">
+<link rel="stylesheet" href="/css/style.css">
+<!--bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!--FONT-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- NAVBAR -->
+<nav id="navbar-menu" class="navbar sticky-top p-4 style-nav navbar-expand-lg">
+  <div class="container">
+    <a class="text-light title-logo ms-2" href="index.html">La ruta de la Cerveza</a>
+    <button class="navbar-toggler bg-azul-oscuro menu-button me-0" type="button" data-bs-toggle="collapse" data-bs-target="#options-menu" aria-controls="options-menu" aria-expanded="false" aria-label="Toggle navigation">
+MENU<i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="options-menu">
+        <ul class="nav nav-pills ms-lg-auto navbar-nav me-auto me-lg-0 mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link text-light link-menu " href="/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light link-menu " href="/Acerca de nosotros.html">Sobre nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light link-menu  " href="#" data-bs-toggle="modal" data-bs-target="#exampleModal-1">Ingresar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light link-menu " href="#" data-bs-toggle="modal" data-bs-target="#exampleModal-2">Suscribirse</a>
+            </li>
+        </ul>
+    </div>
+  </div>
+  </nav>
+<!-- Ventana modal - Ingresar -->
+<div class="modal fade " id="exampleModal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content overflow-hidden  bg-black">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Accede a tu cuenta</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+   <div class="row row-cols-lg-2 row-cols-1 ms-0 modal-body">
+      <div class="col col-sm-12">
+      <form action="/error.html">
+        <div class="mb-3">
+          <label for="e-mail" class="col-form-label fw-bold">E-mail:</label>
+          <input type="email" class="form-control" id="e-mail" required name="user-email"></input>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="col-form-label fw-bold">Contraseña:</label>
+          <input type="password" class="form-control" id="password" minlength="4" maxlength="12" required name="user-password"></input>
+        </div>
+        <div class="mb-3 text-center">
+  <button class="btn-modal" type="submit">Acceder</button>
+  <br><br><a class="fw-bold" href="/error.html" data-bs-toggle="modal" data-bs-target="#forget-password">Olvidé mi contraseña</a>
+</div>
+  </form>
+  <div class="container-button mb-3">
+  <button class="acount-button"><img class="image-icons" src="/img/google.png" alt="google"><a class="nav-link text-black" href="/error.html"> Acceder con cuenta de Google</a></button>
+  <button class="acount-button"><img class="image-icons" src="/img/facebook.png" alt="facebook"><a class="nav-link text-black" href="/error.html">Acceder con cuenta de Facebook</a></button>
+    </div>
+    </div><!--col1-->
+    <div class=" col  modal-body text-center">
+    <img class="img-fluid" src="/img/LA ruta de la cerveza.png" alt="logo" width="300" height="350">
+      </div>
+  </div> <!--row-->
+  </div>
+  </div>
+  </div>
+<!--Modal olvide contraseña-->
+<div class="modal" id="forget-password" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content overflow-hidden bg-black">
+      <div class="modal-header">
+        <h5 class="modal-title">Recuperar Contraseña</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="/error.html">
+          <div class="mb-3">
+            <label for="e-mail" class="col-form-label fw-bold">E-mail:</label>
+            <input type="email" class="form-control" id="e-mail" required name="user-email"></input>
+          </div>
+          <div class="d-flex justify-content-end">
+            <button type="reset" class="btn-modal me-2" data-bs-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn-modal">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Ventana modal - Suscripcion -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+  <div class="modal-header">
+    <h5 class="modal-title fw-bold" id="exampleModalLabel">Ingresa tus Datos</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+    <form action="/error.html">
+      <div class="mb-3">
+        <label for="fullname" class="col-form-label fw-bold">Nombre y Apellido:</label>
+        <input type="text" class="form-control" id="fullname" required name="user-fullname">
+      </div>
+      <div class="mb-3">
+        <label for="e-mail" class="col-form-label fw-bold">E-mail:</label>
+        <input type="email" class="form-control" id="e-mail"  placeholder="ejemplo@gmail.com" required name="user-email"></input>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="col-form-label fw-bold">Contraseña:</label>
+        <input type="password" class="form-control" id="password" minlength="4" maxlength="12" placeholder="De 4 a 12 caracteres"required name="user-password"></input>
+      </div>
+      <div class="mb-3">
+        <label for="password-confirm" class="col-form-label fw-bold">Confirmar contraseña:</label>
+        <input type="password" class="form-control" id="password-confirm" required name="user-confirm-password"></input>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+        <label class="form-check-label fw-bold" for="invalidCheck">
+          Enviar notificaciones por E-mail
+        </label>
+        <div class="invalid-feedback">
+          You must agree before submitting.
+        </div>
+      </div><br>
+      <div class="d-flex justify-content-end">
+        <button type="reset" class="btn-modal me-2" data-bs-dismiss="modal">Cerrar</button>
+        <button type="submit" class="btn-modal">Enviar</button>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+</div>  
+<!--GALERIA DE IMAGENES-->
+<div class="container-fluid pt-1" >
+<h1 class="styletext d-block my-1 text-center fw-bold">Galeria de imágenes</h1>
+<div class="row row-cols-md-3 row-cols-lg-4 row-cols-1 g-3 mt-4">
+
+<div class="col">
+<div class="card border border-4 " > 
+<a href="#" data-bs-toggle="modal" data-bs-target="#Modal1">
+<img src="/img/galeria/antares.jpg" class="card-img-top" alt="BAR-ANTARES" width="271px" height="300px">
+</a>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<img src="/img/galeria/antares.jpg" alt="BAR-ANTARES" class="img-fluid rounded">
+</div>
+</div>
+</div>
+
+<div class="col">
+<div class="card border border-4" >
+<a href="#"data-bs-toggle="modal" data-bs-target="#Modal2">
+<img src="/img/galeria/bar patagonia.jpg" class="card-img-top" alt="BAR-PATAGONIA" width="271px" height="300px">
+</a>   
+</div>
+<!-- Modal -->
+<div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<img src="/img/galeria/bar patagonia.jpg" alt="BAR-PATAGONIA" class="img-fluid rounded">
+</div>
+</div>
+</div>
+
+<div class="col">
+<div class="card border border-4">
+<a href="#" data-bs-toggle="modal" data-bs-target="#Modal3">
+<img src="/img/galeria/bar-odin.jpg" class="card-img-top" alt="BAR-ODIN" width="271px" height="300px">
+</a>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<img src="/img/galeria/bar-odin.jpg" alt="BAR-ODIN" class="img-fluid rounded">
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card border border-4">
+<a href="#" data-bs-toggle="modal" data-bs-target="#Modal4">
+<img src="/img/galeria/brunne.jpg" class="card-img-top" alt="BAR-BRUNNE" width="271px" height="300px">
+</a>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="Modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<img src="/img/galeria/brunne.jpg" alt="BAR-BRUNNE" class="img-fluid rounded">
+</div>
+</div>
+</div>
+
+<div class="col">
+<div class="card border border-4">
+<a href="#" data-bs-toggle="modal" data-bs-target="#Modal5">
+<img src="/img/galeria/castilla.jpg" class="card-img-top" alt="BAR-CASTILLA" width="271px" height="300px">
+</a>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="Modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<img src="/img/galeria/castilla.jpg" alt="BAR-CASTILLA" class="img-fluid rounded">
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card border border-4">
+<a href="#" data-bs-toggle="modal" data-bs-target="#Modal6">
+<img src="/img/galeria/craft.jpg" class="card-img-top" alt="BAR-CRAFT" width="271px" height="300px">
+</a>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="Modal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<img src="/img/galeria/craft.jpg" alt="BAR-CRAFT" class="img-fluid rounded">
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card border border-4">
+<a href="#" data-bs-toggle="modal" data-bs-target="#Modal7">
+<img src="/img/galeria/dot bar.jpg" class="card-img-top" alt="DOT-BAR" width="271px" height="300px">
+</a>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="Modal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<img src="/img/galeria/dot bar.jpg" alt="DOT-BAR" class="img-fluid rounded">
+</div>
+</div>
+</div>
+
+<div class="col">
+<div class="card border border-4">
+<a href="#" data-bs-toggle="modal" data-bs-target="#Modal8">
+<img src="/img/galeria/mr beers.jpg" class="card-img-top" alt="MR.BEERS-BAR" width="271px" height="300px"></a>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="Modal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<img src="/img/galeria/mr beers.jpg" alt="MR.BEERS-BAR" class="img-fluid rounded">
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card border border-4">
+<a href="#" data-bs-toggle="modal" data-bs-target="#Modal9">
+<img src="/img/galeria/peñon-bar.jpg" class="card-img-top" alt="PEÑON-BAR" width="271px" height="300px">
+</a>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="Modal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<img src="/img/galeria/peñon-bar.jpg" alt="PEÑON-BAR" class="img-fluid rounded">
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card border border-4">
+<a href="#" data-bs-toggle="modal" data-bs-target="#Modal10">
+<img src="/img/galeria/porter.jpg" class="card-img-top" alt="PORTER-BAR" width="271px" height="300px">
+</a>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="Modal10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<img src="/img/galeria/porter.jpg" alt="PORTER-BAR" class="img-fluid rounded">
+</div>
+</div>
+</div>    
+<div class="col">
+<div class="card border border-4">
+<a href="#" data-bs-toggle="modal" data-bs-target="#Modal11">
+<img src="/img/galeria/tbc-bar.jpg" class="card-img-top" alt="TBC-BAR" width="271px" height="300px">
+</a>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="Modal11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<img src="/img/galeria/tbc-bar.jpg" alt="TBC-BAR" class="img-fluid rounded">
+</div>
+</div>
+</div>        
+<div class="col">
+<div class="card border border-4">
+<a href="#" data-bs-toggle="modal" data-bs-target="#Modal12">
+<img src="/img/galeria/cervezaartesanal1.jpg" class="card-img-top" alt="CERVEZA-ARTESANAL" width="271px" height="300px">
+</a>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="Modal12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<img src="/img/galeria/cervezaartesanal1.jpg" alt="CERVEZA-ARTESANAL" class="img-fluid rounded">
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card border border-4">
+<a href="#" data-bs-toggle="modal" data-bs-target="#Modal13">
+<img src="/img/galeria/cervezaartesanal2.jpg" class="card-img-top" alt="CERVEZA-ARTESANAL2" width="271px" height="300px">
+</a>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="Modal13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<img src="/img/galeria/cervezaartesanal2.jpg" alt="CERVEZA-ARTESANAL2" class="img-fluid rounded">
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card border border-4">
+<a href="#" data-bs-toggle="modal" data-bs-target="#Modal14">
+<img src="/img/galeria/cervezaartesanal4.jpg" class="card-img-top" alt="CERVEZA-ARTESANAL4" width="271px" height="300px">
+</a>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="Modal14" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<img src="/img/galeria/cervezaartesanal4.jpg" alt="CERVEZA-ARTESANAL4" class="img-fluid rounded">
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card border border-4">
+<a href="#" data-bs-toggle="modal" data-bs-target="#Modal15">
+<img src="/img/galeria/cervezaartesanal5.jpg" class="card-img-top" alt="CERVEZA-ARTESANAL5" width="271px" height="300px">
+</a>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="Modal15" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<img src="/img/galeria/cervezaartesanal5.jpg" alt="CERVEZA-ARTESANAL5" class="img-fluid rounded"">
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card border border-4">
+<a href="#" data-bs-toggle="modal" data-bs-target="#Modal16">
+<img src="/img/galeria/cervezaartesanal6.jpg" class="card-img-top" alt="CERVEZA-ARTESANAL6" width="271px" height="300px">
+</a>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="Modal16" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<img src="/img/galeria/cervezaartesanal6.jpg" alt="CERVEZA-ARTESANAL6" class="img-fluid rounded">
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!--FOOTER-->
+<footer>
+  <div class="desingfooter text-center d-flex row row-cols-md-3 row-cols-lg-3 row-cols-1 py-4 mt-4 mb-0 mx-0 border-top">
+  <div class="col">
+    <a href="/index.html">
+      <img src="/img/LA ruta de la cerveza.png" class="bi me-2" width="200" height="200">
+    </a>
+    <p class="text-light">© Todos los derechos reservados</p>
+  </div>
+  
+  <div class="col text-center">
+  <h5>Nuestras redes sociales</h5>
+  <ul class="nav flex-column mt-3">
+    <li class="nav-item mb-3">
+      <img src="/img/facebook.png" alt="Facebook-icon" width="30px" height="30px">
+      <a href="/error.html" class="nav-link p-0 text-white d-inline "> Facebook
+      </a>
+    </li>
+    <li class="nav-item mb-3">
+      <img src="/img/instagram.png" alt="Instagram-icon" width="30px" height="30px">
+      <a href="/error.html" class="nav-link p-0 text-white d-inline "> Instagram
+      </a>
+    </li>
+    <li class="nav-item mb-3">
+      <img src="/img/gorjeo.png" alt="Twitter-icon" width="30px" height="30px">
+      <a href="/error.html" class="nav-link p-0 text-white d-inline"> Twitter
+      </a>
+    </li>
+  </ul>
+  </div>
+  
+  <div class="col text-center">
+  <ul class="nav flex-column">
+  <li class="nav-item mb-2"> <img src="/img/prohibido.png" alt="" width="150px" height="225px"></li>
+  </ul>
+  </div>
+  </footer>
+
+<!-- JavaScript Bundle with Popper -->  
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

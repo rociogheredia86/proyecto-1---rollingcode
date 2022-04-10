@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pubs y algo más</title>
+<link rel="icon" href="/img/LA ruta de la cerveza.png">
+<link rel="stylesheet" href="/css/style.css">
+<!--bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!--FONT-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- NAVBAR -->
+<nav id="navbar-menu" class="navbar sticky-top p-4 style-nav navbar-expand-lg">
+<div class="container">
+  <a class="text-light title-logo ms-2" href="index.html">La ruta de la Cerveza</a>
+  <button class="navbar-toggler bg-azul-oscuro menu-button me-0" type="button" data-bs-toggle="collapse" data-bs-target="#options-menu" aria-controls="options-menu" aria-expanded="false" aria-label="Toggle navigation">
+    MENU<i class="fa-solid fa-bars"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="options-menu">
+      <ul class="nav nav-pills ms-lg-auto navbar-nav me-auto me-lg-0 mb-2 mb-lg-0">
+          <li class="nav-item">
+          <a class="nav-link text-light link-menu " href="/contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light link-menu " href="/Acerca de nosotros.html">Sobre nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light link-menu  " href="#" data-bs-toggle="modal" data-bs-target="#exampleModal-1">Ingresar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light link-menu " href="#" data-bs-toggle="modal" data-bs-target="#exampleModal-2">Suscribirse</a>
+          </li>
+      </ul>
+  </div>
+</div>
+</nav>
+  <!-- Ventana modal - Ingresar -->
+  <div class="modal fade" id="exampleModal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content overflow-hidden bg-black">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Accede a tu cuenta</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="row row-cols-lg-2 row-cols-1 ms-0 modal-body">
+        <div class="col col-sm-12">
+        <form action="/error.html">
+          <div class="mb-3">
+            <label for="e-mail" class="col-form-label fw-bold">E-mail:</label>
+            <input type="email" class="form-control" id="e-mail" required name="user-email"></input>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="col-form-label fw-bold">Contraseña:</label>
+            <input type="password" class="form-control" id="password" minlength="4" maxlength="12" required name="user-password"></input>
+          </div>
+          <div class="mb-3 text-center">
+    <button class="btn-modal" type="submit">Acceder</button>
+    <br><br><a class="fw-bold" href="/error.html" data-bs-toggle="modal" data-bs-target="#forget-password">Olvidé mi contraseña</a>
+  </div>
+    </form>
+    <div class="container-button mb-3">
+    <button class="acount-button"><img class="image-icons" src="/img/google.png" alt="google"><a class="nav-link text-black" href="/error.html"> Acceder con cuenta de Google</a></button>
+    <button class="acount-button"><img class="image-icons" src="/img/facebook.png" alt="facebook"><a class="nav-link text-black" href="/error.html">Acceder con cuenta de Facebook</a></button>
+      </div>
+      </div><!--col1-->
+      <div class=" col  modal-body text-center">
+      <img class="img-fluid" src="/img/LA ruta de la cerveza.png" alt="logo" width="300" height="350">
+        </div>
+    </div> <!--row-->
+    </div>
+    </div>
+    </div>
+<!--Modal olvide contraseña-->
+<div class="modal" id="forget-password" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content overflow-hidden bg-black">
+      <div class="modal-header">
+        <h5 class="modal-title">Recuperar Contraseña</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="/error.html">
+          <div class="mb-3">
+            <label for="e-mail" class="col-form-label fw-bold">E-mail:</label>
+            <input type="email" class="form-control" id="e-mail" required name="user-email"></input>
+          </div>
+          <div class="d-flex justify-content-end">
+            <button type="reset" class="btn-modal me-2" data-bs-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn-modal">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Ventana modal - Suscripcion -->
+<!-- Modal -->
+  <div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content overflow-hidden bg-black">
+    <div class="modal-header">
+      <h5 class="modal-title fw-bold" id="exampleModalLabel">Ingresa tus Datos</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <form action="/error.html">
+        <div class="mb-3">
+          <label for="fullname" class="col-form-label fw-bold">Nombre y Apellido:</label>
+          <input type="text" class="form-control" id="fullname" required name="user-fullname">
+        </div>
+        <div class="mb-3">
+          <label for="e-mail" class="col-form-label fw-bold">E-mail:</label>
+          <input type="email" class="form-control" id="e-mail"  placeholder="ejemplo@gmail.com" required name="user-email"></input>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="col-form-label fw-bold">Contraseña:</label>
+          <input type="password" class="form-control" id="password" minlength="4" maxlength="12" placeholder="De 4 a 12 caracteres"required name="user-password"></input>
+        </div>
+        <div class="mb-3">
+          <label for="password-confirm" class="col-form-label fw-bold">Confirmar contraseña:</label>
+          <input type="password" class="form-control" id="password-confirm" required name="user-confirm-password"></input>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label fw-bold" for="invalidCheck">
+            Enviar notificaciones por E-mail
+          </label>
+          <div class="invalid-feedback">
+            You must agree before submitting.
+          </div>
+        </div><br>
+        <div class="d-flex justify-content-end">
+          <button type="reset" class="btn-modal me-2" data-bs-dismiss="modal">Cerrar</button>
+          <button type="submit" class="btn-modal">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+  </div>  
+<!--ARTICULO-->
+<div class="container-fluid pt-1" >
+<!-- <div class="d-flex justify-content-startp p-2">
+<a class="style-button text-black fw-bold" href="/index.html"> <img src="/img/back.png" alt="">Volver</a>
+</div> -->
+<main class="container-article">
+<article class="">
+  <h1>¡Pubs, Happy hour y algo más!</h1>
+  <p> <em> Publicado el 27 de marzo del 2022 por Patricia Diaz</em></p>
+  <img src="/img/para articulos/patiobar.jpg" alt="patiobar" class="mb-2 img-fluid" >
+  <p class="text-article" >Y como lo prometido es deuda, a continuación, mencionamos algunos de los pubs más populares repartidos entre Barrio Sur, Microcentro, Barrio Norte y alrededores donde podrás encontrar algunas de las mejores cervezas artesanales, importadas y de elaboración local (Nota: actualmente muchos de ellos ofrecen una variada carta con opciones vegetarianas/ veganas, sin Tacc y lo mejor de todo…. ¡Son pet friendly!).</p>
+<h3 class="my-3">Barrio Norte</h3>    
+<div class="row row-cols-md-3 row-cols-lg-4 row-cols-1">
+  <div class="col">
+  <a href="https://www.instagram.com/antarestucuman/"> 
+  <figure>
+  <img src="/img/para articulos/antares1.jpg" alt="antaresbar" width="200px" height="250px"></a>
+  <figcaption><strong> Antares</strong> - Muñecas 677 - Abierto de 18 a 21</figcaption>
+  </figure>
+  </div>
+  <div class="col">
+  <a href="https://www.instagram.com/porter.brew.house/"> 
+  <figure>
+  <img src="/img/para articulos/porter2.jpg" alt="porterbar" width="200px" height="250px"></a>
+  <figcaption><strong>Porter</strong> - Muñecas 749 - Abierto de 17 a 20</figcaption>
+  </figure>         
+  </div>
+  <div class="col">
+  <a href="https://www.instagram.com/penontucuman/"> 
+  <figure>
+  <img src="/img/para articulos/peñon2.jpg" alt="peñonbar" width="200px" height="250px"></a>
+  <figcaption> <strong>Peñon del Aguila</strong>  - Maipú 802 - Abierto de 17 a 20</figcaption>
+  </figure>
+  </div>
+
+  <div class="col">
+  <a href="https://www.instagram.com/odincerveceriatuc/"> 
+  <figure>
+  <img src="/img/para articulos/odin2.jpg" alt="odinbar" width="200px" height="250px"></a>
+  <figcaption><strong>Odín</strong> - Santiago 1086- Abierto de 18 a 21</figcaption>
+  </figure>
+  </div>
+  
+
+  <div class="col">
+  <a href="https://www.instagram.com/el.shami/"> 
+  <figure>
+  <img src="/img/para articulos/elshami.jpg" alt="elshami" width="200px" height="250px"></a>
+  <figcaption><strong>Shami</strong>  - Sarmiento y Catamarca - Abierto de 18 a 21</figcaption>
+  </figure>
+  </div>
+</div>
+
+<h3 class="my-3">Barrio Sur</h3>
+<div class="row row-cols-md-3 row-cols-lg-4 row-cols-1">
+  <div class="col">
+  <a href="https://www.instagram.com/tbc.barriosur/"> 
+  <figure>
+  <img src="/img/para articulos/tbc2.jpg" alt="tbcbar" width="200px" height="250px"></a>
+  <figcaption><strong>TBC</strong> - Pasaje 2 de Abril 398 - Abierto de 18 a 20.</figcaption>
+  </figure>
+  </div>
+
+  <div class="col">
+  <a href="https://www.instagram.com/rocsonsur/"> 
+  <figure>
+  <img src="/img/para articulos/rocson2.jpg" alt="tbcbar" width="200px" height="250px"></a>
+  <figcaption><strong>Rocson</strong> Gral. Paz 516 - Abierto de 18 a 21..</figcaption>
+  </figure>
+  </div> 
+  
+  <div class="col">
+  <a href="https://www.instagram.com/monasteriotucuman/"> 
+  <figure>
+  <img src="/img/para articulos/monasterio.jpg" alt="monasteriobar" width="200px" height="250px"></a>
+  <figcaption><strong>Monasterio</strong> - Gral. Paz 522 - Abierto de 18 a 20.</figcaption>
+  </figure>
+  </div> 
+
+  <div class="col">
+  <a href="https://www.instagram.com/bonhomie.bar/"> 
+  <figure>
+  <img src="/img/para articulos/bonhomie.jpg" alt="bonhomiebar" width="200px" height="250px"></a>
+  <figcaption><strong>Bonhomie </strong>- Lavalle 689 - Abierto de 18 a 21.</figcaption>
+  </figure>
+  </div> 
+  
+  <div class="col">
+  <a href="https://www.instagram.com/hiddenhouse.ok/"> 
+  <figure>
+  <img src="/img/para articulos/hideen.jpg" alt="hiddenbar" width="200px" height="250px"></a>
+  <figcaption><strong>Hidden House</strong> - Lavalle 525 - Abierto de 18 a 21.</figcaption>
+  </figure>
+  </div> 
+</div>
+
+<h3 class="my-3">Otros</h3>
+<div class="row row-cols-md-3 row-cols-lg-4 row-cols-1">
+  <div class="col">
+  <a href="https://www.instagram.com/cervezapatagoniatucuman/"> 
+  <figure>
+  <img src="/img/para articulos/patagonia3.jpg" alt="patagoniabar" width="200px" height="250px">
+  </a>
+  <figcaption><strong>Patagonia</strong> - Miguel Lillo 365 - Abierto de 17 a 20</figcaption>
+  </figure>
+  </div>
+
+  <div class="col">
+  <a href="https://www.instagram.com/greenbowbar/"> 
+  <figure>
+  <img src="/img/para articulos/greenbar.jpg" alt="greenbar" width="200px" height="250px">
+  </a>
+  <figcaption><strong>Green Bow</strong> - Av. Mate de Luna 1896 - Abierto de 18 a 20.</figcaption>
+  </figure>
+  </div> 
+  
+  <div class="col">
+  <a href="https://www.instagram.com/castilla.jardin.cervecero/"> 
+  <figure>
+  <img src="/img/para articulos/castilla2.jpg" alt="castillabar" width="200px" height="250px">
+  </a>
+  <figcaption><strong>Castilla jardín cervecero</strong> - Abierto de 17 a 00 hs</figcaption>
+  </figure>
+  </div> 
+
+  <div class="col">
+  <a href="https://www.instagram.com/varsoviabeer/"> 
+  <figure>
+  <img src="/img/para articulos/barsoviabar.jpg" alt="varsoviabar" width="200px" height="250px">
+  </a>
+  <figcaption><strong>Varsovia</strong> - Dean Funes 890 - Abierto de 09 a 21.</figcaption>
+  </figure>
+  </div>  
+</div>
+</article>   
+
+<!--COMENTARIOS-->
+<section class="">
+
+<form role="form">
+<div class=""> 
+<label for="comentario"><b>Deje aquí sus comentarios</b> </label>
+<textarea class="form-control mt-2 " rows="4" id="comentarios"></textarea>
+</div> 
+
+<button type="submit" class="btn-modal ms-2 my-2 fw-bold">Enviar</button>       
+</form>
+
+<!--Primer comentario-->
+<div class="style-coment p-2 mt-3">
+<div class="row row-col-3 mx-4">
+<div class="col-1 flex-shrink-0">
+  <img src="/img/man.png" alt="man" width="32px" height="32px">
+</div>
+<div class="col-sm-3">
+  <p class="fw-bold"> Eduardo Martinez</p>
+</div>
+<div class="col d-flex justify-content-end">
+  <p>Publicado 28  marzo 2022 15:30hs</p>
+</div>
+</div>
+<div class="row row-cols-1">
+  <p class="text-coment">Buenísima la info. Hay muchos lugares que no conocía.</p>
+</div>
+</div>
+
+<div class="style-coment p-2 mt-3">
+<div class="row row-col-3 mx-3">
+  <div class="col-1">
+    <img src="/img/profile.png" alt="man" width="32px" height="32px">
+  </div>
+  <div class="col-sm-6">
+    <p class="fw-bold">Jorge Gómez Navarro</p>
+  </div>
+  <div class="col d-flex justify-content-end">
+    <p>Publicado 28  marzo 2022 15:30hs</p>
+  </div>
+  </div>
+  <div class="row row-cols-1">
+    <p class="text-coment">Fui a Peñony por el precio de la consumisión podrían vender algo de mejor calida.</p> 
+      <p>La comida no es mala, pero podrian mejorar.</p>
+  </div>
+</div>
+
+<div class="style-coment p-2 mt-3">
+  <div class="row row-col-3 mx-3 border-1">
+    <div class="col-1">
+      <img src="/img/hacker.png" alt="man" width="32px" height="32px">
+    </div>
+    <div class="col-sm-3">
+      <p class="fw-bold">Gustavo Hacker</p>
+    </div>
+    <div class="col d-flex justify-content-end">
+      <p class=" ">Publicado 28  marzo 2022 21:00hs</p>
+    </div>
+    </div>
+    <div class="row row-cols-1">
+      <p class="text-coment">Recomiendo Castilla. Excelente variedad de bebidas y tragos! Hacen promociones. </p>
+    </div>
+  </div>
+
+  <div class="style-coment p-2 mt-3">
+    <div class="row row-col-3 mx-3">
+      <div class="col-1">
+        <img src="/img/profilew .png" alt="man" width="32px" height="32px">
+      </div>
+      <div class="col-sm-3">
+        <p class="fw-bold">Solana Diaz Lobo</p>
+      </div>
+      <div class="col d-flex justify-content-end">
+        <p>Publicado 29  marzo 2022 12:30hs</p>
+      </div>
+      </div>
+      <div class="row row-cols-1">
+        <p class="text-coment">En cual de los lugares sirven comida veggetariana?</p>
+      </div>
+    </div>
+
+    <div class="style-coment p-2 mt-3">
+      <div class="row row-col-3 mx-3">
+        <div class="col-1">
+          <img src="/img/man2.png" alt="man" width="32px" height="32px">
+        </div>
+        <div class="col-sm-3">
+          <p class="fw-bold">El primo</p>
+        </div>
+        <div class="col d-flex justify-content-end">
+          <p>Publicado 29  marzo 2022 12:30hs</p>
+        </div>
+        </div>
+        <div class="row row-cols-1">
+          <p class="text-coment">Uff ahora si salgo el sabado a hacer un tour cervecero😎</p>
+        </div>
+      </div>
+
+    </div>
+</main>
+<!--FOOTER-->
+<footer class="desingfooter text-center d-flex row row-cols-md-3 row-cols-lg-3 row-cols-1 py-4 mt-4 mb-0 mx-0 border-top">
+  <div class="col">
+  <a href="/index.html">
+  <img src="/img/LA ruta de la cerveza.png" class="bi me-2" width="200" height="200"> 
+  </a>
+  <p class="text-light fs-5">© Todos los derechos reservados</p>
+  </div>
+  
+  <div class="col text-center">
+  <h5>Nuestras redes sociales</h5>
+  <ul class="nav flex-column mt-3" >
+  <li class="nav-item mb-3">
+  <img  src="/img/facebook.png" alt="Facebook-icon" width="30px" height="30px">
+  <a href="#" class="nav-link p-0 text-white d-inline " > Facebook
+  </a>
+  </li>
+  <li class="nav-item mb-3">
+  <img  src="/img/instagram.png" alt="Instagram-icon" width="30px" height="30px">
+  <a href="#" class="nav-link p-0 text-white d-inline "> Instagram
+  </a>
+  </li>
+  <li class="nav-item mb-3">
+  <img src="/img/gorjeo.png" alt="Twitter-icon" width="30px" height="30px">
+  <a href="#" class="nav-link p-0 text-white d-inline"> Twitter
+  </a>
+  </li>
+  </ul>
+  </div>
+  
+  <div class="col text-center">
+  <ul class="nav flex-column">
+  <li class="nav-item mb-2"> <img src="/img/prohibido.png" alt="" width="150px" height="225px"></li>
+  </ul>
+  </div>
+  </footer>  
+
+<!-- JavaScript Bundle with Popper -->  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>
